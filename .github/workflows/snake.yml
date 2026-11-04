@@ -1,28 +1,38 @@
-name: Update contribution snake
+name: Update Retro Arcade snake (2 years)
 
 on:
   schedule:
-    - cron: '19 1 * * *' # daily (UTC)
+    - cron: '23 4 * * 1' # Monday at 04:23 UTC (once a week)
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  snake:
+  arcade-snake:
     runs-on: ubuntu-latest
     steps:
-      - name: Generate custom dark and light SVG snakes
-        uses: Platane/snk/svg-only@v3
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          github_user_name: AliElrouby
-          outputs: |
-            dist/snake-dark.svg?color_snake=#C7F85E&color_dots=#17171C,#404332,#727D3E,#A6C457,#D8F997
-            dist/snake-light.svg?color_snake=#674E81&color_dots=#F2EFE8,#DFDFC5,#BFCF90,#97B35C,#65893C
-      - name: Publish snake SVGs to output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: output
-          build_dir: dist
+          python-version: '3.12'
+
+      - name: Generate animated arcade snake from 2 years of contributions
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/generate_arcade_snake.py --user AliElrouby --output assets/arcade-snake.svg
+
+      - name: Publish SVG to main branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/arcade-snake.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh retro arcade contribution snake (2y)"
+            git push
+          else
+            echo "Contribution image unchanged"
+          fi

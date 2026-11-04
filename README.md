@@ -154,15 +154,11 @@ Agentic AI · LLMs / SLMs · RAG · MCP · Multimodal Systems
 
 ---
 
-## CONTRIBUTION SNAKE
+## RETRO ARCADE · 2-YEAR CONTRIBUTION SNAKE
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AliElrouby/AliElrouby/output/snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AliElrouby/AliElrouby/output/snake-light.svg" />
-    <img src="https://raw.githubusercontent.com/AliElrouby/AliElrouby/output/snake-dark.svg" width="100%" alt="An animated lime-colored snake travels across Ali Elrouby's GitHub contribution grid" />
-  </picture>
-  <sub>Contribution history, replayed as a moving signal · updated daily</sub>
+  <img src="./assets/arcade-snake.svg" width="100%" alt="Retro pixel-art snake moving across two years of Ali Elrouby's GitHub contributions, refreshed weekly" />
+  <sub>Last two years of GitHub contributions · retro arcade pixel snake · refreshed every Monday</sub>
 </div>
 
 ---

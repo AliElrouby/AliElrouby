@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Generate the all-time Retro Arcade contribution snake (dark theme).
 
-One continuous contribution grid covers every week since the GitHub account
-was created. A pixel snake slithers through it week by week, in date order,
+One continuous contribution grid covers every week since the first push
+(first commit); the empty stretch before it is skipped. A pixel snake slithers through it week by week, in date order,
 eats every active day, then respawns them on its way back along the lower lane.
 
 Uses only the Python standard library and GitHub's GraphQL API
@@ -26,7 +26,7 @@ from xml.sax.saxutils import escape
 USER = "AliElrouby"
 WIDTH = 1280
 GRID_LEFT, GRID_RIGHT = 96, 1232  # horizontal span shared by all week columns
-MAX_PITCH = 17.0                  # cell pitch cap, used while the account is young
+MAX_PITCH = 24.0                  # cell pitch cap; short histories get big cells
 STEPS_PER_SECOND = 12             # snake speed, in grid cells per second
 BODY = 6                          # body segments trailing the head
 FLASH_SECONDS = 0.35              # how long an eaten cell flashes before going dark
@@ -80,15 +80,20 @@ def account_created(username: str, token: str) -> date:
     return datetime.fromisoformat(user["createdAt"].replace("Z", "+00:00")).date()
 
 
-def get_contributions(username: str, first: date, last: date, token: str) -> dict[date, int]:
+def get_contributions(username: str, first: date, last: date, token: str) -> tuple[dict[date, int], date | None]:
+    """Daily contribution counts for [first, last], plus the day of the first visible commit (push)."""
     query = """query($login: String!, $from: DateTime!, $to: DateTime!) {
       user(login: $login) {
         contributionsCollection(from: $from, to: $to) {
           contributionCalendar { weeks { contributionDays { date contributionCount } } }
+          commitContributionsByRepository(maxRepositories: 100) {
+            contributions(first: 1, orderBy: {direction: ASC}) { nodes { occurredAt } }
+          }
         }
       }
     }"""
     result: dict[date, int] = {}
+    first_commit: date | None = None
     cursor = first
     # Small windows stay well inside the GraphQL contribution-calendar limits (max 1 year).
     while cursor <= last:
@@ -98,11 +103,18 @@ def get_contributions(username: str, first: date, last: date, token: str) -> dic
             "from": cursor.isoformat() + "T00:00:00Z",
             "to": stop.isoformat() + "T23:59:59Z",
         }, token)
-        for week in user["contributionsCollection"]["contributionCalendar"]["weeks"]:
+        collection = user["contributionsCollection"]
+        for week in collection["contributionCalendar"]["weeks"]:
             for day in week["contributionDays"]:
                 d = date.fromisoformat(day["date"])
                 if first <= d <= last:
                     result[d] = int(day["contributionCount"])
+        if first_commit is None:
+            commits = [date.fromisoformat(node["occurredAt"][:10])
+                       for repo in collection["commitContributionsByRepository"]
+                       for node in repo["contributions"]["nodes"]]
+            if commits:
+                first_commit = max(min(commits), cursor)
         cursor = stop + timedelta(days=1)
 
     # Missing days indicate an API problem, not zero contributions.
@@ -111,7 +123,14 @@ def get_contributions(username: str, first: date, last: date, token: str) -> dic
         missing = [str(first + timedelta(days=i)) for i in range(expected)
                    if first + timedelta(days=i) not in result]
         raise RuntimeError(f"Incomplete contribution data, missing {len(missing)} days, sample={missing[:4]}")
-    return result
+    return result, first_commit
+
+
+def grid_start(data: dict[date, int], first_commit: date | None, fallback: date) -> date:
+    """Start on the first push; without one, on the first active day."""
+    if first_commit is not None:
+        return first_commit
+    return min((d for d, v in data.items() if v > 0), default=fallback)
 
 
 def example_data(first: date, last: date) -> dict[date, int]:
@@ -298,7 +317,7 @@ def render_svg(username: str, first: date, last: date, data: dict[date, int], de
     add(f'<text x="100" y="47" fill="{MUTED}" font-size="13" font-weight="bold" letter-spacing="2" {MONO}>ALI.EXE  /  PIXEL ARCADE</text>')
     add(f'<text x="37" y="99" fill="{INK}" font-size="37" font-weight="900" letter-spacing="-1" {MONO}>CONTRIBUTION <tspan fill="{LIME}">SNAKE</tspan></text>')
     boxes = [
-        ("ALL-TIME MODE", f"{days:,} DAYS", LIME, "#1B2214"),
+        ("SINCE 1ST PUSH", f"{days:,} DAYS", LIME, "#1B2214"),
         ("TOTAL POINTS", "DEMO" if demo else f"{total:,}", VIOLET, "#201A2B"),
         ("ACTIVE DAYS", "DEMO" if demo else f"{active:,}", COPPER, "#261D16"),
         ("BEST STREAK", "DEMO" if demo else f"{streak} DAY{'S' if streak != 1 else ''}", INK, "#1F1F25"),
@@ -313,7 +332,7 @@ def render_svg(username: str, first: date, last: date, data: dict[date, int], de
     add(f'<rect x="22" y="{panel_top}" width="1236" height="{num(panel_bottom - panel_top)}" rx="8" fill="{PANEL}" stroke="{EDGE}" stroke-width="1.5"/>')
     add(f'<rect x="38" y="{panel_top + 16}" width="112" height="30" rx="3" fill="#241C33" stroke="{VIOLET}" stroke-width="1.4"/>')
     add(f'<text x="51" y="{panel_top + 37}" fill="{INK}" font-size="15" font-weight="bold" {MONO}>LEVEL 01</text>')
-    span_text = (f"ALL TIME  ·  {first.strftime('%b %d %Y').upper()} → {last.strftime('%b %d %Y').upper()}"
+    span_text = (f"FIRST PUSH  ·  {first.strftime('%b %d %Y').upper()} → {last.strftime('%b %d %Y').upper()}"
                  f"  ·  {grid.columns} WEEKS")
     add(f'<text x="166" y="{panel_top + 36}" fill="{MUTED}" font-size="12" font-weight="bold" letter-spacing=".5" {MONO}>{span_text}</text>')
     lx = 1110
@@ -347,7 +366,7 @@ def render_svg(username: str, first: date, last: date, data: dict[date, int], de
             last_x = x
 
     # Weekday ticks left of the snake's return gutter (dropped once rows get too thin to label).
-    tick_size = num(min(10, p))
+    tick_size = num(min(12, p))
     for row, name in ((1, "MON"), (3, "WED"), (5, "FRI")) if p >= 6 else ():
         add(f'<text x="{num(grid.cx(-1) - p / 2 - 5)}" y="{num(grid.cy(row) + 3.5)}" fill="{MUTED}" font-size="{tick_size}" text-anchor="end" {MONO}>{name}</text>')
 
@@ -411,21 +430,21 @@ def main() -> None:
     parser.add_argument("--user", default=USER)
     parser.add_argument("--demo", action="store_true", help="Use explicit synthetic demo data for preview only")
     parser.add_argument("--date", default=None, help="Override today's date for deterministic testing, YYYY-MM-DD")
-    parser.add_argument("--since", default=None, help="Override the start date (default: account creation), YYYY-MM-DD")
+    parser.add_argument("--since", default=None, help="Override the start date (default: first push), YYYY-MM-DD")
     args = parser.parse_args()
 
     today = date.fromisoformat(args.date) if args.date else datetime.now(timezone.utc).date()
     token = os.getenv("GITHUB_TOKEN", "")
-    if args.since:
-        first = date.fromisoformat(args.since)
-    elif args.demo:
-        first = years_before(today, 3)
+    if args.demo:
+        first = date.fromisoformat(args.since) if args.since else years_before(today, 3)
+        data = example_data(first, today)
     else:
-        first = account_created(args.user, token)
+        created = account_created(args.user, token)
+        data, first_commit = get_contributions(args.user, created, today, token)
+        first = date.fromisoformat(args.since) if args.since else grid_start(data, first_commit, created)
     if first > today:
         raise SystemExit(f"Start date {first} is after {today}")
 
-    data = example_data(first, today) if args.demo else get_contributions(args.user, first, today, token)
     out = Path(args.output)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(render_svg(args.user, first, today, data, args.demo), encoding="utf-8")

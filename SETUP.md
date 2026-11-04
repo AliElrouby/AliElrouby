@@ -31,7 +31,7 @@ Go to the profile repository's **Settings → Actions → General → Workflow p
 python scripts/generate_arcade_snake.py --demo --output /tmp/arcade-snake.svg
 ```
 
-`--demo` uses clearly labelled synthetic data. `--since YYYY-MM-DD` and `--date YYYY-MM-DD` override the start and end dates; without `--since` the grid starts on the day the GitHub account was created. Real data needs a `GITHUB_TOKEN` environment variable (provided automatically in Actions).
+`--demo` uses clearly labelled synthetic data. `--since YYYY-MM-DD` and `--date YYYY-MM-DD` override the start and end dates; without `--since` the grid starts on the day of the first push (first commit), falling back to the first active day. Real data needs a `GITHUB_TOKEN` environment variable (provided automatically in Actions).
 
 ## Customize the colors
 
@@ -43,13 +43,13 @@ python scripts/generate_arcade_snake.py --demo --output /tmp/arcade-snake.svg
 ## Notes
 
 - GitHub contribution counts and third-party statistics come from the user's real public activity. The repository contains no fabricated numbers.
-- The snake shows a single grid covering every week since the account was created. Cells shrink as the years add up, so the whole history always fits on one line.
+- The snake shows a single grid covering every week since the first push. Cells are big while the history is short and shrink as the years add up, so it always fits on one line.
 - Some third-party SVG services may have periodic rate limits. Statistics are illustrative metrics, not a full representation of engineering ability.
 - The About, experience, skills, and featured work sections are based on the provided CV. If a project repository becomes public later, link it manually without inventing the URL.
 
 ## Components
 
-- Custom Neural Atlas header / technical map / footer: created for this profile
+- Custom Neural Atlas header / technical map: created for this profile
 - Retro Arcade contribution snake: `scripts/generate_arcade_snake.py` (standard-library Python + GitHub GraphQL)
 - Contribution city: https://github.com/yoshi389111/github-profile-3d-contrib
 - Stats: https://github.com/stats-organization/github-stats-extended

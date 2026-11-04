@@ -1,0 +1,28 @@
+name: Update contribution snake
+
+on:
+  schedule:
+    - cron: '19 1 * * *' # daily (UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  snake:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate custom dark and light SVG snakes
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: AliElrouby
+          outputs: |
+            dist/snake-dark.svg?color_snake=#C7F85E&color_dots=#17171C,#404332,#727D3E,#A6C457,#D8F997
+            dist/snake-light.svg?color_snake=#674E81&color_dots=#F2EFE8,#DFDFC5,#BFCF90,#97B35C,#65893C
+      - name: Publish snake SVGs to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

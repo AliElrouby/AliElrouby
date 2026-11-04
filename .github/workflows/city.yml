@@ -1,0 +1,28 @@
+name: Update 3D contribution city
+
+on:
+  schedule:
+    - cron: '37 1 * * *' # daily (UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  city:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Render the custom 3D contribution city
+        uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: AliElrouby
+          SETTING_JSON: config/atlas-city.json
+      - name: Publish city SVG to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output-3d-contrib
+          build_dir: profile-3d-contrib
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

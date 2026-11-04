@@ -1,0 +1,20 @@
+[
+  {
+    "type": "normal",
+    "fileName": "atlas-city.svg",
+    "backgroundColor": "#101014",
+    "foregroundColor": "#EEECE8",
+    "strongColor": "#C7F85E",
+    "weakColor": "#817B82",
+    "radarColor": "#BB91F7",
+    "growingAnimation": true,
+    "duration": "10s",
+    "contribColors": [
+      "#242328",
+      "#51523C",
+      "#82924D",
+      "#B3D95D",
+      "#E0FF9C"
+    ]
+  }
+]

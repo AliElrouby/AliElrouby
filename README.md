@@ -126,14 +126,3 @@ PRINCIPLE  Understand the model. Engineer the system. Measure the result.
 </div>
 
 ---
-
-<div align="center">
-  <a href="mailto:alielrouby78@gmail.com"><b>CONNECT / COLLABORATE</b></a>
-  &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/ali-elrouby-3493302b5/">LinkedIn</a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/AliElrouby?tab=repositories">Repositories</a>
-
-  <br/><br/>
-  <img src="./assets/atlas-footer.svg" alt="End of transmission — always in development" width="100%" />
-</div>

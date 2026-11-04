@@ -18,23 +18,47 @@
 
 <br/>
 
-### `01 / WHO_AM_I` &nbsp; ABOUT ME
+## ABOUT ME
 
-I'm **Ali Elrouby**, an **AI Engineer** and **Data Science & Artificial Intelligence** undergraduate at **Zewail City of Science and Technology** (B.S. expected 2027).
+<table>
+<tr><td width="100%" valign="top">
 
-My work sits where **machine learning, applied research, and software engineering** meet: computer vision, natural language processing, explainable AI, cybersecurity analytics, and integrating intelligent models into software systems.
+### Ali Elrouby <img align="right" src="https://img.shields.io/badge/AI_ENGINEER-C7F85E?style=flat-square&labelColor=101014&color=C7F85E" alt="AI Engineer" />
 
-```text
-> atlas status --current
+**Data Science & Artificial Intelligence** undergraduate at **Zewail City of Science and Technology** · **B.S. expected 2027**.
 
-ROLE       AI Engineer Intern @ BUCHI Services Egypt
-FOCUS      Agentic AI · LLMs / SLMs · RAG · MCP · Multimodal Systems
-BACKGROUND ML / DL · Evaluation · Backend Engineering · Data Systems
-PRINCIPLE  Understand the model. Engineer the system. Measure the result.
-```
+I build at the intersection of **machine learning, applied research, and software engineering** — from computer vision and NLP to explainable AI, cybersecurity analytics, and software-integrated intelligent systems.
+
+</td></tr>
+</table>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**CURRENT ROLE**
+
+### AI Engineer Intern
+**BUCHI Services Egypt**
+
+Agentic AI · LLMs / SLMs · RAG · MCP · Multimodal Systems
+
+</td>
+<td width="50%" valign="top">
+
+**ENGINEERING FOCUS**
+
+### Research → Real Systems
+**ML / DL · Evaluation · Backend Engineering**
+
+*Understand the model. Engineer the system. Measure the result.*
+
+</td>
+</tr>
+</table>
 
 <details>
-<summary><b>↳ More about my background</b></summary>
+<summary><b>Explore my experience & background</b></summary>
 <br/>
 
 - **BUCHI Services Egypt — AI Engineer Intern (Oct 2026–present):** Working with agentic AI, LLMs/SLMs, MCP, RAG, fine-tuning, knowledge distillation, self-supervised learning, and multimodal architectures.
@@ -45,34 +69,50 @@ PRINCIPLE  Understand the model. Engineer the system. Measure the result.
 
 ---
 
-### `02 / NEURAL_ATLAS` &nbsp; TECH STACK
+## TECHNOLOGY STACK
 
 <div align="center">
-  <img src="./assets/neural-stack-map.svg" alt="Neural Atlas map connecting four technical domains: foundations, machine learning, vision and language, and engineering" width="100%" />
+  <img src="./assets/neural-stack-map.svg" alt="Neural Atlas map connecting foundations, machine learning, vision and language, and engineering" width="100%" />
 </div>
 
 <table>
 <tr>
 <td valign="top" width="50%">
-  <b><code>CORE / LANGUAGES</code></b><br/><br/>
-  <code>Python</code> · <code>C++</code> · <code>SQL</code> · <code>JavaScript</code>
-  <br/><br/>
-  <b><code>MODELING / AI</code></b><br/><br/>
-  <code>PyTorch</code> · <code>TensorFlow / Keras</code> · <code>scikit-learn</code> · <code>Transformers</code>
+
+**LANGUAGES**
+
+<img alt="Python" src="https://img.shields.io/badge/Python-1B1B21?style=for-the-badge&logo=python&logoColor=C7F85E&labelColor=1B1B21" /> <img alt="C++" src="https://img.shields.io/badge/C%2B%2B-1B1B21?style=for-the-badge&logo=cplusplus&logoColor=BB91F7&labelColor=1B1B21" /> <img alt="SQL" src="https://img.shields.io/badge/SQL-1B1B21?style=for-the-badge&logo=postgresql&logoColor=D89A65&labelColor=1B1B21" /> <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-1B1B21?style=for-the-badge&logo=javascript&logoColor=C7F85E&labelColor=1B1B21" />
+
 </td>
 <td valign="top" width="50%">
-  <b><code>VISION / LANGUAGE</code></b><br/><br/>
-  <code>OpenCV</code> · <code>YOLOv8</code> · <code>FastText</code> · <code>DistilBERT</code> · <code>LLMs</code> · <code>RAG</code>
-  <br/><br/>
-  <b><code>SYSTEMS / TOOLS</code></b><br/><br/>
-  <code>Flask</code> · <code>REST APIs</code> · <code>Docker</code> · <code>Git</code> · <code>PostgreSQL</code> · <code>Odoo</code> · <code>Jupyter</code>
+
+**AI & DEEP LEARNING**
+
+<img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-1B1B21?style=for-the-badge&logo=pytorch&logoColor=D89A65&labelColor=1B1B21" /> <img alt="TensorFlow" src="https://img.shields.io/badge/TensorFlow-1B1B21?style=for-the-badge&logo=tensorflow&logoColor=BB91F7&labelColor=1B1B21" /> <img alt="scikit-learn" src="https://img.shields.io/badge/scikit-learn-1B1B21?style=for-the-badge&logo=scikitlearn&logoColor=C7F85E&labelColor=1B1B21" /> <img alt="Transformers" src="https://img.shields.io/badge/Transformers-1B1B21?style=for-the-badge&logo=huggingface&logoColor=BB91F7&labelColor=1B1B21" />
+
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%">
+
+**VISION & LANGUAGE**
+
+<img alt="OpenCV" src="https://img.shields.io/badge/OpenCV-1B1B21?style=for-the-badge&logo=opencv&logoColor=BB91F7&labelColor=1B1B21" /> <img alt="YOLOv8" src="https://img.shields.io/badge/YOLOv8-1B1B21?style=for-the-badge&logo=ultralytics&logoColor=C7F85E&labelColor=1B1B21" /> <img alt="FastText" src="https://img.shields.io/badge/FastText-1B1B21?style=for-the-badge&logo=meta&logoColor=D89A65&labelColor=1B1B21" /> <img alt="DistilBERT" src="https://img.shields.io/badge/DistilBERT-1B1B21?style=for-the-badge&logo=huggingface&logoColor=BB91F7&labelColor=1B1B21" /> <img alt="LLMs" src="https://img.shields.io/badge/LLMs-1B1B21?style=for-the-badge&logo=openai&logoColor=C7F85E&labelColor=1B1B21" /> <img alt="RAG" src="https://img.shields.io/badge/RAG-1B1B21?style=for-the-badge&logo=semanticweb&logoColor=D89A65&labelColor=1B1B21" />
+
+</td>
+<td valign="top" width="50%">
+
+**SOFTWARE & TOOLS**
+
+<img alt="Flask" src="https://img.shields.io/badge/Flask-1B1B21?style=for-the-badge&logo=flask&logoColor=EEECE8&labelColor=1B1B21" /> <img alt="REST APIs" src="https://img.shields.io/badge/REST%20APIs-1B1B21?style=for-the-badge&logo=fastapi&logoColor=C7F85E&labelColor=1B1B21" /> <img alt="Docker" src="https://img.shields.io/badge/Docker-1B1B21?style=for-the-badge&logo=docker&logoColor=BB91F7&labelColor=1B1B21" /> <img alt="Git" src="https://img.shields.io/badge/Git-1B1B21?style=for-the-badge&logo=git&logoColor=D89A65&labelColor=1B1B21" /> <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-1B1B21?style=for-the-badge&logo=postgresql&logoColor=C7F85E&labelColor=1B1B21" /> <img alt="Odoo" src="https://img.shields.io/badge/Odoo-1B1B21?style=for-the-badge&logo=odoo&logoColor=BB91F7&labelColor=1B1B21" /> <img alt="Jupyter" src="https://img.shields.io/badge/Jupyter-1B1B21?style=for-the-badge&logo=jupyter&logoColor=D89A65&labelColor=1B1B21" />
+
 </td>
 </tr>
 </table>
 
 ---
 
-### `03 / MISSION_ARCHIVE` &nbsp; FEATURED WORK
+## FEATURED WORK
 
 <!-- Project repositories have intentionally not been linked where a public URL has not been verified. -->
 
@@ -85,7 +125,7 @@ PRINCIPLE  Understand the model. Engineer the system. Measure the result.
 
 ---
 
-### `04 / CONTRIBUTION_CITY` &nbsp; LAST 12 MONTHS
+## 3D CONTRIBUTION CITY · LAST 12 MONTHS
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/AliElrouby/AliElrouby/output-3d-contrib/atlas-city.svg" alt="3D isometric contribution city for AliElrouby's GitHub activity over the past year" width="100%" />
@@ -96,7 +136,7 @@ PRINCIPLE  Understand the model. Engineer the system. Measure the result.
 
 ---
 
-### `05 / LIVE_TELEMETRY` &nbsp; GITHUB ACTIVITY
+## GITHUB ACTIVITY
 
 <div align="center">
   <a href="https://github.com/AliElrouby">
@@ -114,7 +154,7 @@ PRINCIPLE  Understand the model. Engineer the system. Measure the result.
 
 ---
 
-### `06 / SIGNAL_TRACE` &nbsp; CONTRIBUTION SNAKE
+## CONTRIBUTION SNAKE
 
 <div align="center">
   <picture>
@@ -126,3 +166,14 @@ PRINCIPLE  Understand the model. Engineer the system. Measure the result.
 </div>
 
 ---
+
+<div align="center">
+  <a href="mailto:alielrouby78@gmail.com"><b>CONNECT / COLLABORATE</b></a>
+  &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/ali-elrouby-3493302b5/">LinkedIn</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/AliElrouby?tab=repositories">Repositories</a>
+
+  <br/><br/>
+  <img src="./assets/atlas-footer.svg" alt="End of transmission — always in development" width="100%" />
+</div>

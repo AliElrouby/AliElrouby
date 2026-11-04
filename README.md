@@ -108,8 +108,8 @@ PRINCIPLE  Understand the model. Engineer the system. Measure the result.
 </div>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AliElrouby&amp;bg_color=101014&amp;color=D5D1CD&amp;line=C7F85E&amp;point=BB91F7&amp;area=true&amp;hide_border=true&amp;title_color=D89A65" width="100%" alt="Recent GitHub contribution activity graph" />
-  <sub>Recent activity · the 3D city above shows the broader contribution calendar</sub>
+  <img src="./assets/activity-graph.svg" width="100%" alt="Recent GitHub contribution activity graph" />
+  <sub>Real GitHub contributions over the last 90 days · rendered daily by this repository’s GitHub Action</sub>
 </div>
 
 ---

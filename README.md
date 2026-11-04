@@ -1,7 +1,7 @@
 <!--
   ALI ELROUBY // NEURAL ATLAS
   Theme: Obsidian #101014 · Acid Lime #C7F85E · Violet #BB91F7 · Copper #D89A65
-  The 3D city and snake appear after the workflows are run for the first time.
+  The 3D city appears after its workflow runs; the snake is regenerated weekly by its own workflow.
 -->
 
 <div align="center">
@@ -138,27 +138,19 @@ Agentic AI · LLMs / SLMs · RAG · MCP · Multimodal Systems
 
 ## GITHUB ACTIVITY
 
+<!-- Widths follow each card's aspect ratio (467×195 and 300×190) so both render at the same height across the full row. -->
 <div align="center">
-  <a href="https://github.com/AliElrouby">
-    <img height="169" alt="Ali Elrouby's GitHub statistics" src="https://github-stats-extended.vercel.app/api?username=AliElrouby&amp;show_icons=true&amp;hide_border=true&amp;bg_color=101014&amp;title_color=C7F85E&amp;text_color=EEECE8&amp;icon_color=BB91F7&amp;ring_color=D89A65" />
-  </a>
-  <a href="https://github.com/AliElrouby?tab=repositories">
-    <img height="169" alt="Top programming languages across public GitHub repositories" src="https://github-stats-extended.vercel.app/api/top-langs/?username=AliElrouby&amp;layout=compact&amp;langs_count=7&amp;hide_border=true&amp;bg_color=101014&amp;title_color=C7F85E&amp;text_color=EEECE8" />
-  </a>
-</div>
-
-<div align="center">
-  <img src="./assets/activity-graph.svg" width="100%" alt="Recent GitHub contribution activity graph" />
-  <sub>Real GitHub contributions over the last 90 days · rendered daily by this repository’s GitHub Action</sub>
+  <a href="https://github.com/AliElrouby"><img width="59.5%" alt="Ali Elrouby's GitHub statistics" src="https://github-stats-extended.vercel.app/api?username=AliElrouby&amp;show_icons=true&amp;hide_border=true&amp;bg_color=101014&amp;title_color=C7F85E&amp;text_color=EEECE8&amp;icon_color=BB91F7&amp;ring_color=D89A65" /></a>
+  <a href="https://github.com/AliElrouby?tab=repositories"><img width="39%" alt="Top programming languages across public GitHub repositories" src="https://github-stats-extended.vercel.app/api/top-langs/?username=AliElrouby&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;bg_color=101014&amp;title_color=C7F85E&amp;text_color=EEECE8" /></a>
 </div>
 
 ---
 
-## RETRO ARCADE · 2-YEAR CONTRIBUTION SNAKE
+## RETRO ARCADE · ALL-TIME CONTRIBUTION SNAKE
 
 <div align="center">
-  <img src="./assets/arcade-snake.svg" width="100%" alt="Retro pixel-art snake moving across two years of Ali Elrouby's GitHub contributions, refreshed weekly" />
-  <sub>Last two years of GitHub contributions · retro arcade pixel snake · refreshed every Monday</sub>
+  <img src="./assets/arcade-snake.svg" width="100%" alt="Retro pixel-art snake slithering week by week through every GitHub contribution Ali Elrouby has made since joining, eating each active day" />
+  <sub>Every week since joining GitHub · one level · the snake eats active days and respawns them on the way back · refreshed every Monday</sub>
 </div>
 
 ---

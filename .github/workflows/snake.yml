@@ -1,12 +1,21 @@
-name: Update Retro Arcade snake (2 years)
+name: Update Retro Arcade snake (all time)
 
 on:
   schedule:
     - cron: '23 4 * * 1' # Monday at 04:23 UTC (once a week)
+  push:
+    branches: [main]
+    paths:
+      - scripts/generate_arcade_snake.py
+      - .github/workflows/snake.yml
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: arcade-snake
+  cancel-in-progress: false
 
 jobs:
   arcade-snake:
@@ -20,7 +29,7 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Generate animated arcade snake from 2 years of contributions
+      - name: Generate animated arcade snake from all-time contributions
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/generate_arcade_snake.py --user AliElrouby --output assets/arcade-snake.svg
@@ -30,9 +39,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/arcade-snake.svg
-          if ! git diff --cached --quiet; then
-            git commit -m "Refresh retro arcade contribution snake (2y)"
-            git push
-          else
+          if git diff --cached --quiet; then
             echo "Contribution image unchanged"
+            exit 0
           fi
+          git commit -m "Refresh retro arcade contribution snake (all time)"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push

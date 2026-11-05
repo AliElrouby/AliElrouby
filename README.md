@@ -125,17 +125,6 @@ Agentic AI · LLMs / SLMs · RAG · MCP · Multimodal Systems
 
 ---
 
-## 3D CONTRIBUTION CITY · LAST 12 MONTHS
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/AliElrouby/AliElrouby/output-3d-contrib/atlas-city.svg" alt="3D isometric contribution city for AliElrouby's GitHub activity over the past year" width="100%" />
-  <sub>3D activity terrain · lime + violet + graphite · generated daily from GitHub contributions</sub>
-</div>
-
-<!-- The image above appears after the 'Update 3D contribution city' workflow first succeeds. -->
-
----
-
 ## GITHUB ACTIVITY
 
 <!-- Widths follow each card's aspect ratio (467×195 and 300×190) so both render at the same height across the full row. -->

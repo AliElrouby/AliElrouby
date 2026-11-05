@@ -2,7 +2,7 @@ name: Update Retro Arcade snake (all time)
 
 on:
   schedule:
-    - cron: '23 4 * * 1' # Monday at 04:23 UTC (once a week)
+    - cron: '23 4 * * *' # daily at 04:23 UTC, so recent days match the GitHub calendar
   push:
     branches: [main]
     paths:

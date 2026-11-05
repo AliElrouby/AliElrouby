@@ -1,7 +1,7 @@
 <!--
   ALI ELROUBY // NEURAL ATLAS
   Theme: Obsidian #101014 · Acid Lime #C7F85E · Violet #BB91F7 · Copper #D89A65
-  The 3D city appears after its workflow runs; the snake is regenerated weekly by its own workflow.
+  The 3D city appears after its workflow runs; the snake is regenerated daily by its own workflow.
 -->
 
 <div align="center">
@@ -139,7 +139,7 @@ Agentic AI · LLMs / SLMs · RAG · MCP · Multimodal Systems
 
 <div align="center">
   <img src="./assets/arcade-snake.svg" width="100%" alt="Retro pixel-art snake slithering week by week through every GitHub contribution since Ali Elrouby's first push, eating each active day" />
-  <sub>Every week since my first push · one level · the snake eats active days and respawns them on the way back · refreshed every Monday</sub>
+  <sub>Every week since my first push · one level · the snake eats active days and respawns them on the way back · refreshed daily</sub>
 </div>
 
 ---

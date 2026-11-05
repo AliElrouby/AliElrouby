@@ -10,7 +10,7 @@ This directory is a **GitHub profile repository**. The project is built for the 
 4. On GitHub, open **Actions → Update 3D contribution city → Run workflow**.
 5. Run **Actions → Update Retro Arcade snake (all time) → Run workflow** as well (it also runs automatically whenever the snake script or workflow changes on `main`).
 6. Check that the Actions runs succeeded, that the `output-3d-contrib` branch exists, and that `assets/arcade-snake.svg` was refreshed on `main`.
-7. Refresh https://github.com/AliElrouby. The city updates daily; the snake updates every Monday.
+7. Refresh https://github.com/AliElrouby. The city updates daily; the snake updates daily at 04:23 UTC.
 
 ## If actions cannot push
 

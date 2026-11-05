@@ -16,6 +16,7 @@ import argparse
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta, timezone
 import json
+import math
 import os
 from pathlib import Path
 import random
@@ -87,7 +88,7 @@ def get_contributions(username: str, first: date, last: date, token: str) -> tup
         contributionsCollection(from: $from, to: $to) {
           contributionCalendar { weeks { contributionDays { date contributionCount } } }
           commitContributionsByRepository(maxRepositories: 100) {
-            contributions(first: 1, orderBy: {direction: ASC}) { nodes { occurredAt } }
+            contributions(first: 1, orderBy: {field: OCCURRED_AT, direction: ASC}) { nodes { occurredAt } }
           }
         }
       }
@@ -153,8 +154,9 @@ def years_before(d: date, years: int) -> date:
         return d.replace(year=d.year - years, day=28)
 
 
-def color_level(count: int) -> int:
-    return 0 if count == 0 else 1 if count <= 1 else 2 if count <= 3 else 3 if count <= 6 else 4
+def color_level(count: int, peak: int) -> int:
+    """Same shading as GitHub's calendar: quarters of the busiest day in view."""
+    return 0 if count <= 0 or peak <= 0 else min(4, math.ceil(4 * count / peak))
 
 
 def longest_streak(data: dict[date, int]) -> int:
@@ -281,6 +283,7 @@ def render_svg(username: str, first: date, last: date, data: dict[date, int], de
     total = sum(in_range.values())
     active = sum(1 for v in in_range.values() if v > 0)
     streak = longest_streak(in_range)
+    peak = max(in_range.values(), default=0)
     days = (last - first).days + 1
 
     panel_top = 141
@@ -379,7 +382,7 @@ def render_svg(username: str, first: date, last: date, data: dict[date, int], de
     for col, row, d in grid.days():
         x, y = grid.left + col * p + inset, grid.top + row * p + inset
         count = in_range.get(d, 0)
-        fill = LEVELS[color_level(count)]
+        fill = LEVELS[color_level(count, peak)]
         cell = f'<rect x="{num(x)}" y="{num(y)}" width="{num(b)}" height="{num(b)}" rx="1" fill="{fill}"'
         if count:
             eat = route.eat_at[d]
@@ -417,7 +420,7 @@ def render_svg(username: str, first: date, last: date, data: dict[date, int], de
     add(f'<rect x="22" y="{num(footer_y)}" width="1236" height="33" rx="4" fill="#1B1B22" stroke="{EDGE}"/>')
     fy = num(footer_y + 21.5)
     add(f'<text x="40" y="{fy}" fill="{LIME}" font-size="13" font-weight="bold" {MONO}>▶ PRESS START  ·  {safe(username.upper())}</text>')
-    add(f'<text x="640" y="{fy}" fill="{INK}" font-size="12" text-anchor="middle" {MONO}>SYNCED {last.isoformat()}  ·  WEEKLY / MON 04:23 UTC</text>')
+    add(f'<text x="640" y="{fy}" fill="{INK}" font-size="12" text-anchor="middle" {MONO}>SYNCED {last.isoformat()}  ·  DAILY / 04:23 UTC</text>')
     add(f'<text x="1240" y="{fy}" fill="{COPPER}" font-size="12" text-anchor="end" {MONO}>STYLE PREVIEW / DEMO DATA</text>' if demo else
         f'<text x="1240" y="{fy}" fill="{VIOLET}" font-size="12" text-anchor="end" {MONO}>REAL GITHUB DATA</text>')
     add('</svg>')

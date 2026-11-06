@@ -3,7 +3,7 @@
 
 One continuous contribution grid covers every week since the first push
 (first commit); the empty stretch before it is skipped. A pixel snake slithers through it week by week, in date order,
-eats every active day, then respawns them on its way back along the lower lane.
+eats every active day, and each eaten day regrows a few seconds later.
 
 Uses only the Python standard library and GitHub's GraphQL API
 (GITHUB_TOKEN is provided automatically inside GitHub Actions).
@@ -31,6 +31,7 @@ MAX_PITCH = 24.0                  # cell pitch cap; short histories get big cell
 STEPS_PER_SECOND = 12             # snake speed, in grid cells per second
 BODY = 6                          # body segments trailing the head
 FLASH_SECONDS = 0.35              # how long an eaten cell flashes before going dark
+REGROW_SECONDS = 3.0              # how long an eaten cell stays dark before it grows back
 
 # Neural Atlas palette (matches the header, stat cards and 3D city).
 BG = "#101014"
@@ -376,7 +377,7 @@ def render_svg(username: str, first: date, last: date, data: dict[date, int], de
     # Respawn lane (the snake's return track).
     add(f'<path d="M{num(grid.cx(-1))} {num(lane_y)}H{num(grid.cx(grid.columns))}" stroke="{EDGE}" stroke-width="1.2" stroke-dasharray="1 4" stroke-linecap="round"/>')
 
-    # Contribution cells; active days are eaten, flash, then respawn on the return lap.
+    # Contribution cells; active days are eaten, flash, go dark briefly, then regrow.
     b = grid.box
     inset = (p - b) / 2
     for col, row, d in grid.days():
@@ -388,7 +389,7 @@ def render_svg(username: str, first: date, last: date, data: dict[date, int], de
             eat = route.eat_at[d]
             add(f'{cell}><animate attributeName="fill" calcMode="discrete" dur="{dur}s" repeatCount="indefinite" '
                 f'values="{fill};{INK};{LEVELS[0]};{fill}" '
-                f'keyTimes="0;{key(eat)};{key(eat + FLASH_SECONDS * route.length / dur)};{key(route.respawn_at[col])}"/></rect>')
+                f'keyTimes="0;{key(eat)};{key(eat + FLASH_SECONDS * route.length / dur)};{key(min(eat + REGROW_SECONDS * route.length / dur, route.respawn_at[col]))}"/></rect>')
         else:
             add(cell + "/>")
 

@@ -139,7 +139,7 @@ Agentic AI · LLMs / SLMs · RAG · MCP · Multimodal Systems
 
 <div align="center">
   <img src="./assets/arcade-snake.svg" width="100%" alt="Retro pixel-art snake slithering week by week through every GitHub contribution since Ali Elrouby's first push, eating each active day" />
-  <sub>Every week since my first push · one level · the snake eats active days and respawns them on the way back · refreshed daily</sub>
+  <sub>Every week since my first push · one level · the snake eats active days and they regrow behind it · refreshed daily</sub>
 </div>
 
 ---

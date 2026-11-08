@@ -112,19 +112,6 @@ Agentic AI · LLMs / SLMs · RAG · MCP · Multimodal Systems
 
 ---
 
-## FEATURED WORK
-
-<!-- Project repositories have intentionally not been linked where a public URL has not been verified. -->
-
-| File | Project / stack | Highlights |
-|:--|:--|:--|
-| `CV_001` | **RC-Car Bowling Detection** <br/>`YOLOv8n` · `OpenCV` · `Roboflow` | Real-time car and bowling-pin detection with temporal tracking; trained on ~1,050 labeled images. |
-| `NLP_002` | **Medical Symptom-to-Disease Classification** <br/>`PyTorch` · `BiLSTM` · `FastText` · `DistilBERT` | 24-class text classification; **95.32% test accuracy** and **95.53% macro F1**. |
-| `XAI_003` | **Explainable Multimodal Diabetic Retinopathy Classification** <br/>`TensorFlow/Keras` · `GAT` · `SHAP` · `Grad-CAM` | Retinal images + clinical features; **87.80% test accuracy**, **63.02% balanced accuracy**, and **55.26% macro F1** on 754 held-out patients. |
-| `SEC_004` | **Cybersecurity Anomaly Detection** <br/>`scikit-learn` · `LightGBM` · `Random Forest` | ML detection pipelines with engineered features; **91.5% multiclass accuracy** and **1st place** in a course competition. |
-
----
-
 ## GITHUB ACTIVITY
 
 <!-- Widths follow each card's aspect ratio (467×195 and 300×190) so both render at the same height across the full row. -->

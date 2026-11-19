@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="473" viewBox="0 0 1280 473" role="img" aria-labelledby="title desc">
 <title id="title">Ali Elrouby Retro Arcade all-time contribution snake</title>
-<desc id="desc">Animated pixel snake travels through every week of GitHub contributions from 2025-11-05 to 2026-11-18: 212 contributions on 70 active days.</desc>
-<defs><path id="route" d="M106.45 295.27V357.22H127.1V233.32H147.75V357.22H168.4V233.32H189.05V357.22H209.7V233.32H230.35V357.22H251V233.32H271.65V357.22H292.3V233.32H312.95V357.22H333.6V233.32H354.25V357.22H374.9V233.32H395.55V357.22H416.2V233.32H436.85V357.22H457.5V233.32H478.15V357.22H498.8V233.32H519.45V357.22H540.1V233.32H560.75V357.22H581.4V233.32H602.05V357.22H622.7V233.32H643.35V357.22H664V233.32H684.65V357.22H705.3V233.32H725.95V357.22H746.6V233.32H767.25V357.22H787.9V233.32H808.55V357.22H829.2V233.32H849.85V357.22H870.5V233.32H891.15V357.22H911.8V233.32H932.45V357.22H953.1V233.32H973.75V357.22H994.4V233.32H1015.05V357.22H1035.7V233.32H1056.35V357.22H1077V233.32H1097.65V357.22H1118.3V233.32H1138.95V357.22H1159.6V233.32H1180.25V357.22H1200.9V233.32H1221.55V295.27H1242.2V380.87H85.8V295.27H106.45"/></defs>
+<desc id="desc">Animated pixel snake travels through every week of GitHub contributions from 2025-11-05 to 2026-11-19: 212 contributions on 70 active days.</desc>
+<defs><path id="route" d="M106.45 295.27V357.22H127.1V233.32H147.75V357.22H168.4V233.32H189.05V357.22H209.7V233.32H230.35V357.22H251V233.32H271.65V357.22H292.3V233.32H312.95V357.22H333.6V233.32H354.25V357.22H374.9V233.32H395.55V357.22H416.2V233.32H436.85V357.22H457.5V233.32H478.15V357.22H498.8V233.32H519.45V357.22H540.1V233.32H560.75V357.22H581.4V233.32H602.05V357.22H622.7V233.32H643.35V357.22H664V233.32H684.65V357.22H705.3V233.32H725.95V357.22H746.6V233.32H767.25V357.22H787.9V233.32H808.55V357.22H829.2V233.32H849.85V357.22H870.5V233.32H891.15V357.22H911.8V233.32H932.45V357.22H953.1V233.32H973.75V357.22H994.4V233.32H1015.05V357.22H1035.7V233.32H1056.35V357.22H1077V233.32H1097.65V357.22H1118.3V233.32H1138.95V357.22H1159.6V233.32H1180.25V357.22H1200.9V233.32H1221.55V315.93H1242.2V380.87H85.8V295.27H106.45"/></defs>
 <rect width="1280" height="473" rx="16" fill="#101014"/>
 <rect x="2" y="2" width="1276" height="469" rx="14" fill="none" stroke="#2E2C36" stroke-width="2"/>
 <rect x="22" y="22" width="1236" height="101" rx="8" fill="#16161C" stroke="#2E2C36" stroke-width="1.5"/>
@@ -10,7 +10,7 @@
 <text x="37" y="99" fill="#EEECE8" font-size="37" font-weight="900" letter-spacing="-1" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">CONTRIBUTION <tspan fill="#C7F85E">SNAKE</tspan></text>
 <rect x="476" y="40" width="181" height="66" rx="5" fill="#1B2214" stroke="#C7F85E" stroke-opacity=".55"/>
 <text x="490" y="63" fill="#8E8B95" font-size="12" font-weight="bold" letter-spacing="1" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">SINCE 1ST PUSH</text>
-<text x="490" y="91" fill="#C7F85E" font-size="20" font-weight="bold" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">379 DAYS</text>
+<text x="490" y="91" fill="#C7F85E" font-size="20" font-weight="bold" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">380 DAYS</text>
 <rect x="669" y="40" width="181" height="66" rx="5" fill="#201A2B" stroke="#BB91F7" stroke-opacity=".55"/>
 <text x="683" y="63" fill="#8E8B95" font-size="12" font-weight="bold" letter-spacing="1" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">TOTAL POINTS</text>
 <text x="683" y="91" fill="#BB91F7" font-size="20" font-weight="bold" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">212</text>
@@ -23,7 +23,7 @@
 <rect x="22" y="141" width="1236" height="265.19" rx="8" fill="#16161C" stroke="#2E2C36" stroke-width="1.5"/>
 <rect x="38" y="157" width="112" height="30" rx="3" fill="#241C33" stroke="#BB91F7" stroke-width="1.4"/>
 <text x="51" y="178" fill="#EEECE8" font-size="15" font-weight="bold" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">LEVEL 01</text>
-<text x="166" y="177" fill="#8E8B95" font-size="12" font-weight="bold" letter-spacing=".5" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">FIRST PUSH  ·  NOV 05 2025 → NOV 18 2026  ·  55 WEEKS</text>
+<text x="166" y="177" fill="#8E8B95" font-size="12" font-weight="bold" letter-spacing=".5" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">FIRST PUSH  ·  NOV 05 2025 → NOV 19 2026  ·  55 WEEKS</text>
 <text x="1102" y="177" fill="#8E8B95" font-size="11" font-weight="bold" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">LESS</text>
 <rect x="1110" y="166" width="13" height="13" rx="1" fill="#22212A"/>
 <rect x="1127" y="166" width="13" height="13" rx="1" fill="#3A4A24"/>
@@ -428,7 +428,8 @@
 <rect x="1213.49" y="245.92" width="16.11" height="16.11" rx="1" fill="#3A4A24"><animate attributeName="fill" calcMode="discrete" dur="37.02s" repeatCount="indefinite" values="#3A4A24;#EEECE8;#22212A;#3A4A24" keyTimes="0;0.8463;0.8557;0.8646"/></rect>
 <rect x="1213.49" y="266.57" width="16.11" height="16.11" rx="1" fill="#22212A"/>
 <rect x="1213.49" y="287.22" width="16.11" height="16.11" rx="1" fill="#22212A"/>
-<rect x="1211.49" y="285.22" width="20.11" height="20.11" rx="2" fill="none" stroke="#D89A65" stroke-width="1.4"><animate attributeName="opacity" values="1;.15;1" dur="1.6s" repeatCount="indefinite"/></rect>
+<rect x="1213.49" y="307.87" width="16.11" height="16.11" rx="1" fill="#22212A"/>
+<rect x="1211.49" y="305.87" width="20.11" height="20.11" rx="2" fill="none" stroke="#D89A65" stroke-width="1.4"><animate attributeName="opacity" values="1;.15;1" dur="1.6s" repeatCount="indefinite"/></rect>
 <g aria-label="animated pixel snake">
 <rect x="-8.05" y="-8.05" width="16.11" height="16.11" rx="1" fill="#675CAC" stroke="#101014" stroke-width=".7"><animateMotion dur="37.02s" begin="-36.520s" repeatCount="indefinite" rotate="auto"><mpath href="#route" xlink:href="#route"/></animateMotion></rect>
 <rect x="-8.05" y="-8.05" width="16.11" height="16.11" rx="1" fill="#7766BD" stroke="#101014" stroke-width=".7"><animateMotion dur="37.02s" begin="-36.603s" repeatCount="indefinite" rotate="auto"><mpath href="#route" xlink:href="#route"/></animateMotion></rect>
@@ -445,6 +446,6 @@
 </g></g>
 <rect x="22" y="420.19" width="1236" height="33" rx="4" fill="#1B1B22" stroke="#2E2C36"/>
 <text x="40" y="441.69" fill="#C7F85E" font-size="13" font-weight="bold" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">▶ PRESS START  ·  ALIELROUBY</text>
-<text x="640" y="441.69" fill="#EEECE8" font-size="12" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">SYNCED 2026-11-18  ·  DAILY / 04:23 UTC</text>
+<text x="640" y="441.69" fill="#EEECE8" font-size="12" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">SYNCED 2026-11-19  ·  DAILY / 04:23 UTC</text>
 <text x="1240" y="441.69" fill="#BB91F7" font-size="12" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">REAL GITHUB DATA</text>
 </svg>

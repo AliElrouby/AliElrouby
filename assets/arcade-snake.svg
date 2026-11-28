@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="470" viewBox="0 0 1280 470" role="img" aria-labelledby="title desc">
 <title id="title">Ali Elrouby Retro Arcade all-time contribution snake</title>
-<desc id="desc">Animated pixel snake travels through every week of GitHub contributions from 2025-11-05 to 2026-11-27: 219 contributions on 73 active days.</desc>
+<desc id="desc">Animated pixel snake travels through every week of GitHub contributions from 2025-11-05 to 2026-11-28: 221 contributions on 74 active days.</desc>
 <defs><path id="route" d="M106.3 293.98V354.82H126.58V233.14H146.86V354.82H167.14V233.14H187.42V354.82H207.7V233.14H227.98V354.82H248.26V233.14H268.54V354.82H288.82V233.14H309.1V354.82H329.38V233.14H349.66V354.82H369.94V233.14H390.22V354.82H410.5V233.14H430.78V354.82H451.06V233.14H471.34V354.82H491.62V233.14H511.9V354.82H532.18V233.14H552.46V354.82H572.74V233.14H593.02V354.82H613.3V233.14H633.58V354.82H653.86V233.14H674.14V354.82H694.42V233.14H714.7V354.82H734.98V233.14H755.26V354.82H775.54V233.14H795.82V354.82H816.1V233.14H836.38V354.82H856.66V233.14H876.94V354.82H897.22V233.14H917.5V354.82H937.78V233.14H958.06V354.82H978.34V233.14H998.62V354.82H1018.9V233.14H1039.18V354.82H1059.46V233.14H1079.74V354.82H1100.02V233.14H1120.3V354.82H1140.58V233.14H1160.86V354.82H1181.14V233.14H1201.42V354.82H1221.7V233.14H1241.98V378.1H86.02V293.98H106.3"/></defs>
 <rect width="1280" height="470" rx="16" fill="#101014"/>
 <rect x="2" y="2" width="1276" height="466" rx="14" fill="none" stroke="#2E2C36" stroke-width="2"/>
@@ -10,20 +10,20 @@
 <text x="37" y="99" fill="#EEECE8" font-size="37" font-weight="900" letter-spacing="-1" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">CONTRIBUTION <tspan fill="#C7F85E">SNAKE</tspan></text>
 <rect x="476" y="40" width="181" height="66" rx="5" fill="#1B2214" stroke="#C7F85E" stroke-opacity=".55"/>
 <text x="490" y="63" fill="#8E8B95" font-size="12" font-weight="bold" letter-spacing="1" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">SINCE 1ST PUSH</text>
-<text x="490" y="91" fill="#C7F85E" font-size="20" font-weight="bold" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">388 DAYS</text>
+<text x="490" y="91" fill="#C7F85E" font-size="20" font-weight="bold" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">389 DAYS</text>
 <rect x="669" y="40" width="181" height="66" rx="5" fill="#201A2B" stroke="#BB91F7" stroke-opacity=".55"/>
 <text x="683" y="63" fill="#8E8B95" font-size="12" font-weight="bold" letter-spacing="1" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">TOTAL POINTS</text>
-<text x="683" y="91" fill="#BB91F7" font-size="20" font-weight="bold" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">219</text>
+<text x="683" y="91" fill="#BB91F7" font-size="20" font-weight="bold" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">221</text>
 <rect x="862" y="40" width="181" height="66" rx="5" fill="#261D16" stroke="#D89A65" stroke-opacity=".55"/>
 <text x="876" y="63" fill="#8E8B95" font-size="12" font-weight="bold" letter-spacing="1" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">ACTIVE DAYS</text>
-<text x="876" y="91" fill="#D89A65" font-size="20" font-weight="bold" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">73</text>
+<text x="876" y="91" fill="#D89A65" font-size="20" font-weight="bold" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">74</text>
 <rect x="1055" y="40" width="181" height="66" rx="5" fill="#1F1F25" stroke="#EEECE8" stroke-opacity=".55"/>
 <text x="1069" y="63" fill="#8E8B95" font-size="12" font-weight="bold" letter-spacing="1" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">BEST STREAK</text>
 <text x="1069" y="91" fill="#EEECE8" font-size="20" font-weight="bold" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">5 DAYS</text>
 <rect x="22" y="141" width="1236" height="262.24" rx="8" fill="#16161C" stroke="#2E2C36" stroke-width="1.5"/>
 <rect x="38" y="157" width="112" height="30" rx="3" fill="#241C33" stroke="#BB91F7" stroke-width="1.4"/>
 <text x="51" y="178" fill="#EEECE8" font-size="15" font-weight="bold" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">LEVEL 01</text>
-<text x="166" y="177" fill="#8E8B95" font-size="12" font-weight="bold" letter-spacing=".5" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">FIRST PUSH  ·  NOV 05 2025 → NOV 27 2026  ·  56 WEEKS</text>
+<text x="166" y="177" fill="#8E8B95" font-size="12" font-weight="bold" letter-spacing=".5" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">FIRST PUSH  ·  NOV 05 2025 → NOV 28 2026  ·  56 WEEKS</text>
 <text x="1102" y="177" fill="#8E8B95" font-size="11" font-weight="bold" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">LESS</text>
 <rect x="1110" y="166" width="13" height="13" rx="1" fill="#22212A"/>
 <rect x="1127" y="166" width="13" height="13" rx="1" fill="#3A4A24"/>
@@ -431,13 +431,14 @@
 <rect x="1193.51" y="306.35" width="15.82" height="15.82" rx="1" fill="#22212A"/>
 <rect x="1193.51" y="326.63" width="15.82" height="15.82" rx="1" fill="#5E8A2F"><animate attributeName="fill" calcMode="discrete" dur="38.19s" repeatCount="indefinite" values="#5E8A2F;#EEECE8;#22212A;#5E8A2F" keyTimes="0;0.8292;0.8383;0.8688"/></rect>
 <rect x="1193.51" y="346.91" width="15.82" height="15.82" rx="1" fill="#3A4A24"><animate attributeName="fill" calcMode="discrete" dur="38.19s" repeatCount="indefinite" values="#3A4A24;#EEECE8;#22212A;#3A4A24" keyTimes="0;0.8313;0.8405;0.8688"/></rect>
-<rect x="1213.79" y="326.63" width="15.82" height="15.82" rx="1" fill="#22212A"/>
+<rect x="1213.79" y="346.91" width="15.82" height="15.82" rx="1" fill="#22212A"/>
+<rect x="1213.79" y="326.63" width="15.82" height="15.82" rx="1" fill="#3A4A24"><animate attributeName="fill" calcMode="discrete" dur="38.19s" repeatCount="indefinite" values="#3A4A24;#EEECE8;#22212A;#3A4A24" keyTimes="0;0.8357;0.8449;0.8666"/></rect>
 <rect x="1213.79" y="306.35" width="15.82" height="15.82" rx="1" fill="#22212A"/>
 <rect x="1213.79" y="286.07" width="15.82" height="15.82" rx="1" fill="#22212A"/>
 <rect x="1213.79" y="265.79" width="15.82" height="15.82" rx="1" fill="#3A4A24"><animate attributeName="fill" calcMode="discrete" dur="38.19s" repeatCount="indefinite" values="#3A4A24;#EEECE8;#22212A;#3A4A24" keyTimes="0;0.8423;0.8514;0.8666"/></rect>
 <rect x="1213.79" y="245.51" width="15.82" height="15.82" rx="1" fill="#22212A"/>
 <rect x="1213.79" y="225.23" width="15.82" height="15.82" rx="1" fill="#22212A"/>
-<rect x="1211.79" y="324.63" width="19.82" height="19.82" rx="2" fill="none" stroke="#D89A65" stroke-width="1.4"><animate attributeName="opacity" values="1;.15;1" dur="1.6s" repeatCount="indefinite"/></rect>
+<rect x="1211.79" y="344.91" width="19.82" height="19.82" rx="2" fill="none" stroke="#D89A65" stroke-width="1.4"><animate attributeName="opacity" values="1;.15;1" dur="1.6s" repeatCount="indefinite"/></rect>
 <g aria-label="animated pixel snake">
 <rect x="-7.91" y="-7.91" width="15.82" height="15.82" rx="1" fill="#675CAC" stroke="#101014" stroke-width=".7"><animateMotion dur="38.19s" begin="-37.690s" repeatCount="indefinite" rotate="auto"><mpath href="#route" xlink:href="#route"/></animateMotion></rect>
 <rect x="-7.91" y="-7.91" width="15.82" height="15.82" rx="1" fill="#7766BD" stroke="#101014" stroke-width=".7"><animateMotion dur="38.19s" begin="-37.773s" repeatCount="indefinite" rotate="auto"><mpath href="#route" xlink:href="#route"/></animateMotion></rect>
@@ -454,6 +455,6 @@
 </g></g>
 <rect x="22" y="417.24" width="1236" height="33" rx="4" fill="#1B1B22" stroke="#2E2C36"/>
 <text x="40" y="438.74" fill="#C7F85E" font-size="13" font-weight="bold" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">▶ PRESS START  ·  ALIELROUBY</text>
-<text x="640" y="438.74" fill="#EEECE8" font-size="12" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">SYNCED 2026-11-27  ·  DAILY / 04:23 UTC</text>
+<text x="640" y="438.74" fill="#EEECE8" font-size="12" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">SYNCED 2026-11-28  ·  DAILY / 04:23 UTC</text>
 <text x="1240" y="438.74" fill="#BB91F7" font-size="12" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">REAL GITHUB DATA</text>
 </svg>
